@@ -42,60 +42,61 @@
           
         </div>
         <div id="mobile">
-          <i id="bar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg></i>
+          <i id="bar"></i>
         </div>
       </nav>
 
-      <div class="container">
-        <div class="row header">
-          <h1>CONTACT US &nbsp;</h1><br>
-          <h3>Fill out the form below to learn more!</h3>
-        </div>
-        <div class="row body">
-          <form action="#">
-            <ul>
-              
-              <li>
-                <p class="left">
-                  <label for="first_name">first name</label>
-                  <input type="text" name="first_name" placeholder="John" />
-                </p>
-                <p class="pull-right">
-                  <label for="last_name">last name</label>
-                  <input type="text" name="last_name" placeholder="Smith" />      
-                </p>
-              </li>
-              
-              <li>
-                <p>
-                  <label for="email">email <span class="req">*</span></label>
-                  <input type="email" name="email" placeholder="john.smith@gmail.com" />
-                </p>
-              </li>        
-              <li><div class="divider"></div></li>
-              <li>
-                <label for="comments">comments</label>
-                <textarea cols="46" rows="3" name="comments"></textarea>
-              </li>
-              
-              <li>
-                <input class="btn btn-submit" type="submit" value="Submit" />
-                <small>or press <strong>enter</strong></small>
-              </li>
-              
-            </ul>
-          </form>  
+      <div>
+      <input type="text" placeholder="Enter your Last name" id="lastName" />
+<br><br>
+
+<input type="text" placeholder="Enter your First name" id="firstName" />
+
+<input type="radio" id="male" name="gender" value="male"> Male
+<input type="radio" id="female" name="gender" value="female"> Female
+<br>
+<br>
+
+<input type="email" placeholder="Enter your email" id="email" />
+<br>
+<br>
+<input type="text" placeholder="Address" id="address" />
+<br>
+<input type="text" placeholder="House number" id="houseNumber" />
+
+<select id="country">
+ <option disabled selected value> -- select a country -- </option>
+ <option value="India">India</option>
+ <option value="UK">UK</option>
+ <option value="Sri Lanka">Sri Lanka</option>
+ <option value="United States Of America">United States Of America</option>
+ <option disabled selected value> -- select a country -- </option>
+
+</select>
+<br><br>
+<input type="password" placeholder="Enter password" id="password" />
+<input type="password" placeholder="Enter password (check)" id="passwordCheck" />
+<br><br>
+
+<span>What is your question?</span>
+<br>
+<textarea id="question" rows="4"></textarea>
+<br><br>
+
+<button onclick="sendContact();">Send contact</button>
+</div>
+    
+    <section class="contact bg-light pt-5 text-center">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-lg-7 mx-auto">
+          <input type="text" placeholder="Enter Your Email Address">
+          <button class="btn4 my-5">GET NOTIFIED</button>
+          <p> © Copyright 2021 <i>BOOKLASTIC</i> All Rights Reserved</p>
         </div>
       </div>
-      <footer class="id-social">
-        <div class="social">
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>Instagram
-          </a>
-        </div>
-
-      </footer>
+    </div>
+  </section>
+    
 </body>
 </html>
